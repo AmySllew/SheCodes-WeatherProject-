@@ -1,0 +1,47 @@
+h1 {
+    font-family: "K2D", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: hsl(135, 86%, 31%);
+  }
+  
+  h2 {
+    font-family: "K2D", sans-serif;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  ul {
+    font-family: "K2D", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    list-style: none;
+  }
+  p {
+    font-family: "K2D", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 20px;
+    margin: auto;
+  }
+  form {
+    text-align: left;
+  }
+  
+  body {
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  }
+  
+  button {
+    text-align: center;
+    background-color: blue;
+    padding: auto;
+    margin: auto;
+  }
+
+  sun {
+    font-size: 100px;
+
+  }
