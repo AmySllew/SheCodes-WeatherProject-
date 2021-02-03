@@ -82,7 +82,7 @@ function formatDate(timestamp) {
     degrees.innerHTML = `${temperature}°C`;
     description.innerHTML = response.data.weather[0].description;
   } 
-  
+
   
   
   
