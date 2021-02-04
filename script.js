@@ -28,7 +28,7 @@ function formatDate(timestamp) {
       "Dec"
     ];
   
-    return `${days[day]}, ${months[month]} ${hours}:${minutes}`;
+    return `${days[day]},${date} ${months[month]} ${hours}:${minutes}`;
   }
   
   function searchPlace(event) {
