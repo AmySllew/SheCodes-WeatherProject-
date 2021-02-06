@@ -1,3 +1,4 @@
+
 function formatDate(timestamp) {
     let dateElement = document.querySelector("#date");
     let now = new Date(timestamp);
@@ -28,21 +29,9 @@ function formatDate(timestamp) {
       "Dec"
     ];
   
-    return `${days[day]},${date} ${months[month]} ${hours}:${minutes}`;
-  }
-  
-  function searchPlace(event) {
-    event.preventDefault();
-    let cityElement = document.querySelector("#city");
-    let cityInput = document.querySelector("city-input");
-  }
-  
-  let dateElement = document.querySelector("#date");
-  let currentTime = new Date();
-  let searchForm = document.querySelector("#searchForm");
-  
-  let now = new Date();
-  dateElement.innerHTML = formatDate(now);
+    return `${days[day]}, ${months[month]} ${hours}:${minutes}`;
+}
+
   
   function displayWeatherCondition(response) {
     console.log(response.data)
@@ -51,7 +40,7 @@ function formatDate(timestamp) {
   document.querySelector("#description").innerHTML = response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-  }
+}
   
   function getCurrentLocation(event){
     event.preventDefault();
@@ -59,7 +48,14 @@ function formatDate(timestamp) {
     let apiKey = "a415eeb517a020050fb05861a2fa490c";
     axios.get(apiUrl).then(displayWeatherCondition);
   }
+   
   
+  let dateElement = document.querySelector("#date");
+  let currentTime = new Date();
+  let searchForm = document.querySelector("#searchForm");
+  
+  let now = new Date();
+  dateElement.innerHTML = formatDate(now);
   
   function searchCity(event) {
     event.preventDefault();
@@ -75,15 +71,16 @@ function formatDate(timestamp) {
   
   
   function showTemperature(response){
-    console.log(response.data);
     let temperature = Math.round(response.data.main.temp);
     let temperatureElement = document.querySelector("temperature"); 
     let status = document.querySelector("#temperature-description");
+    let iconElement=document.querySelector("#icon");
     degrees.innerHTML = `${temperature}°C`;
-    description.innerHTML = response.data.weather[0].description;
+    iconElement.setAttribute
+    ("src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   } 
-
   
   
-  
+ 
   
