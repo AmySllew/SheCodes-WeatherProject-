@@ -1,91 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<link rel="stylesheet" href="style.css"/>
-<script src="https://kit.fontawesome.com/7238d89dd4.js" crossorigin="anonymous"></script>
-
-
-
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7238d89dd4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather</title>
-    
-</head>
-
-<body>
-  <div class =background>
-
-  </div>
-    <div class ="container">
-    <h1>
-       <strong> Weather </strong>
-    </h1> 
-
-    <h2>
-      
-      </h2>
-
-    <form id = "cityForm">
-        <input text = "city" 
-        placeholder ="Search city"
-        autocomplete="off"
-        autofocus="on"
-        id="city-input"
-        class = "search form" id = "search-form"/> 
-    </form>
-
-    <input type="submit" 
-           value="search" />
-
-    <button id="current-location-button">
-      Current Location
-    </button>       
-   
-    <div class="weather-details">
-      <div class="col-md-12">
-    <ul>
-      <li id="date">
-        today
-      </li>
-      <li id="place">
-        City
-      </li>
-      <li id ="description">
-        Sunny
-        <li id ="icon"></li>
-
-      <li>
-        <img
-        id ="icon"
-        src="http://openweathermap.org/img/wn/01d@2x.png">
-        
-      </li>
-      <li>
-      <span id="temperature"></span>°C | <a href = "#">°F</a> </span>
-       </li>
-      <li>
-        Humidity: <span id="humidity">0</span>%
-      </li>
-      <li>Wind: <span id="wind"></span>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-  </div> 
-  </div> 
-   
-
-       
-   <script src="script.js"></script> 
-
-</body>
-<footer>
-  Open-source Code by 
- <a href ="https://github.com/AmySllew/SheCodes-WeatherProject-" target="_blank">Amy Wells</a> 
-</footer>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <h1>
+        <strong> Weather </strong>
+      </h1>
+      <h2></h2>
+      <form id="cityForm">
+        <input
+          text="city"
+          placeholder="Search city"
+          autocomplete="off"
+          autofocus="on"
+          id="city-input"
+          class="search form"
+          id="search-form"
+        />
+      </form>
+      <input type="submit" value="search" />
+      <button id="current-location-button">Current Location</button>
+      <div class="weather-details">
+        <div class="col-md-12">
+          <ul>
+            <li id="date">today</li>
+            <li id="place">City</li>
+            <li id="description">Sunny</li>
+            <li>
+              <img
+                id="icon"
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+              />
+            </li>
+            <li><span id="temperature"></span>°C </li>
+            <li>Humidity: <span id="humidity">0</span>%</li>
+            <li>Wind: <span id="wind">Km</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    Open-source Code by
+    <a
+      href="https://github.com/AmySllew/SheCodes-WeatherProject-"
+      target="_blank"
+      >Amy Wells</a
+    >
+  </footer>
 </html>
+
